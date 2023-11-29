@@ -3,6 +3,7 @@ from datetime import time
 import pandas as pd
 from openpyxl import load_workbook
 from descricao_tra import define_descricao
+from xlsxwriter import Workbook
 
 estados_regioes = {
     'AC': 'Norte',
