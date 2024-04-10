@@ -1,4 +1,4 @@
-import pandas as pd 
+import pandas as pd
 from datetime import time
 import pandas as pd
 from openpyxl import load_workbook
@@ -36,33 +36,33 @@ estados_regioes = {
 }
 
 lider = {
-    'DF': 'Gutemberg',
-    'GO': 'Gutemberg',
-    'MT': 'Gutemberg',
-    'MS': 'Gutemberg',
-    'AL': 'Saulo',
-    'BA': 'Douglas',
-    'CE': 'Douglas',
+    'DF': 'Luiz Bolzon',
+    'GO': 'Luiz Bolzon',
+    'MT': 'Luiz Bolzon',
+    'MS': 'Luiz Bolzon',
+    'AL': 'Gilvan',
+    'BA': 'Erivaldo',
+    'CE': 'Erivaldo',
     'MA': 'Erivaldo',
-    'PB': 'Saulo',
-    'PE': 'Saulo',
-    'PI': 'Luiz Bolzon',
-    'RN': 'Saulo',
-    'SE': 'Saulo',
-    'AC': 'Erivaldo',
-    'AP': 'Erivaldo',
-    'AM': 'Erivaldo',
-    'PA': 'Luiz Bolzon',
-    'RO': 'Erivaldo',
-    'RR': 'Erivaldo',
-    'TO': 'Luiz Bolzon',
-    'ES': 'Dolôr',
-    'MG': 'Dolôr',
-    'RJ': 'Dolôr',
+    'PB': 'Gilvan',
+    'PE': 'Gilvan',
+    'PI': 'Gilvan',
+    'RN': 'Gilvan',
+    'SE': 'Gilvan',
+    'AC': 'Dolôr',
+    'AP': 'Dolôr',
+    'AM': 'Dolôr',
+    'PA': 'Dolôr',
+    'RO': 'Dolôr',
+    'RR': 'Dolôr',
+    'TO': 'Dolôr',
+    'ES': 'Bruno Martins',
+    'MG': 'Elesandro',
+    'RJ': 'Elesandro',
     'SP': 'Elesandro',
-    'PR': 'Sérgio Mukai',
-    'RS': 'Sérgio Mukai',
-    'SC': 'Sérgio Mukai'
+    'PR': 'Bruno Martins',
+    'RS': 'Bruno Martins',
+    'SC': 'Bruno Martins'
 }
 
 causa_dicionario = {

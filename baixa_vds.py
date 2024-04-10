@@ -47,3 +47,4 @@ chrome.find_element(By.XPATH, '/html/body/form[2]/div/div/div/div/div[2]/div/tab
 time.sleep(5)
 chrome.find_element(By.XPATH, '/html/body/form[2]/div/div/div/div/div[1]/a[1]').click()
 time.sleep(10)
+
