@@ -5,7 +5,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 import time
+
+servico = Service(ChromeDriverManager().install())
 
 url = "https://oss.telebras.com.br/cpqdom-web/login.xhtml"
 url_tabela = "https://oss.telebras.com.br/cpqdom-web/operation/OrderQueryList.xhtml"
@@ -36,15 +39,15 @@ chrome.get(url_tabela)
 chrome.find_element(By.XPATH, '/html/body/form[2]/div/div/div/div/div[1]/div/button[2]').click()
 time.sleep(1)
 
-while len(chrome.find_elements(By.ID, 'dataTableFormId:DataTableId:j_idt252')) < 1:
+while len(chrome.find_elements(By.ID, 'dataTableFormId:DataTableId:j_idt466')) < 1:
     time.sleep(1)
-chrome.find_element(By.ID, 'dataTableFormId:DataTableId:j_idt252').click()
+chrome.find_element(By.ID, 'dataTableFormId:DataTableId:j_idt466').click()
 
 time.sleep(5)
-elemento_filtro = chrome.find_element(By.XPATH, '/html/body/form[2]/div/div/div/div/div[2]/div/table/thead/tr/th[1]/input')
+elemento_filtro = chrome.find_element(By.XPATH, '//*[@id="dataTableFormId:DataTableId:j_idt304:filter"]')
 elemento_filtro.send_keys('VDS')
-chrome.find_element(By.XPATH, '/html/body/form[2]/div/div/div/div/div[2]/div/table/thead/tr/th[8]/span[2]').click()
+chrome.find_element(By.XPATH, '//*[@id="dataTableFormId:DataTableId:j_idt320"]/span[2]').click()
 time.sleep(5)
-chrome.find_element(By.XPATH, '/html/body/form[2]/div/div/div/div/div[1]/a[1]').click()
+chrome.find_element(By.XPATH, '//*[@id="dataTableFormId:DataTableId_paginator_top"]/a[1]/img').click()
 time.sleep(10)
 
